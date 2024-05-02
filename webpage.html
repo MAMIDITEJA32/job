@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Job Notifications</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background: transparent;
+}
+h1 {
+    margin-left: 100px;
+    text-align: center;
+    color: #333;
+}
+h2 {
+    margin-left: 100px;
+    color: #007bff;
+    margin-top: 30px;
+}
+.job-notification {
+    background-color:rgb(123, 163, 182);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    margin-right: 400px;
+    
+}
+.job-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #00070e;
+}
+.job-description {
+    color: #f4f3f3;
+}
+.job-date {
+    color: #fbf9f9;
+    font-size: 14px;
+}
+        .image{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+    </style>
+</head>
+<body class="image"style="background-image: url('jobImage.jpg');>
+    
+                <div class="container">
+                    <h1 style="color:rgb(15, 14, 14)">Student Job Notifications</h1>
+                    
+                    <!-- Government Jobs -->
+                    <h2>Government Jobs</h2>
+                    <div id="government-jobs"></div>
+            
+                    <!-- Private Jobs -->
+                    <h2>Private Jobs</h2>
+                    <div id="private-jobs"></div>
+                </div>
+                
+                <script>
+                    // Sample data for government jobs
+                    const governmentJobs = [
+                        { title: "Constable selections", description: "Qualifications:10th,intermidate and Degree ", date: "April 18, 2024" },
+                        { title: "Indian Railways Jobs", description: "Qualifications:Intermidate and Degree", date: "April 17, 2024" }
+                        // Add more government job objects here
+                    ];
+            
+                    // Sample data for private jobs
+                    const privateJobs = [
+                        { title: "Cyber security", description: "Qualifications:B-Tech and M-Tech", date: "April 16, 2024" },
+                        { title: "Full stack devoloper", description: "Qualifications:B-Tech and M-Tech", date: "April 15, 2024" }
+                        // Add more private job objects here
+                    ];
+            
+                    // Function to generate job notification HTML
+                    function generateJobNotification(job) {
+                        return `
+                            <div class="job-notification">
+                                <div class="job-title">${job.title}</div>
+                                <div class="job-description">${job.description}</div>
+                                <div class="job-date">Posted on: ${job.date}</div>
+                            </div>
+                        `;
+                    }
+            
+                    // Function to display government jobs
+                    function displayGovernmentJobs() {
+                        const governmentJobsContainer = document.getElementById('government-jobs');
+                        governmentJobsContainer.innerHTML = '';
+                        governmentJobs.forEach(job => {
+                            governmentJobsContainer.innerHTML += generateJobNotification(job);
+                        });
+                    }
+            
+                    // Function to display private jobs
+                    function displayPrivateJobs() {
+                        const privateJobsContainer = document.getElementById('private-jobs');
+                        privateJobsContainer.innerHTML = '';
+                        privateJobs.forEach(job => {
+                            privateJobsContainer.innerHTML += generateJobNotification(job);
+                        });
+                    }
+            
+                    // Display initial jobs
+                    displayGovernmentJobs();
+                    displayPrivateJobs();
+                </script>
+</body>
+</html>

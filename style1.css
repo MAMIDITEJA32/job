@@ -1,0 +1,200 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    margin-left: 0%;
+    
+}
+.main{
+
+   
+}
+
+.navbar{
+    width:1200px;
+    height: 45px;
+    margin:auto;
+    background-image: linear-gradient(45deg,black,rgb(235, 178, 159),rgb(165, 165, 235),white);
+}
+
+.icon{
+  color: orange;
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  width:230px;
+  float: left;
+  margin-top: 7px;
+  margin-left: 0px;
+}
+
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+    color: black;
+    
+}ul{
+    list-style: none;
+    display: flex;
+    margin-left: 5px;
+    
+}
+
+ul li{
+    margin-left: 42px;
+    margin-top: 13px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration:none;
+}
+
+ul li a:hover{
+    color: orange;
+}
+
+.log{
+    margin-left: 42px;
+    margin-top: 13px;
+    font-size: 20px;
+    font-weight: bold;
+    float: right;
+}
+
+.reg{
+        margin-left: 42px;
+        margin-top: 13px;
+        font-size: 20px;
+        font-weight: bold;
+        float: right;
+
+}
+
+ol{
+    list-style: none;
+}
+
+ol a:hover{
+    color: rgb(6, 6, 6);
+}
+
+.search{
+    width:500px;
+    float:center;
+    height: 40px;
+    margin-left: 35%;
+    margin-top: 50px;
+    padding: 10px;
+    border-radius: 20px;
+    display: block;
+}
+
+
+
+#mysearch{
+    font-family: 'Times New Roman';
+    width:75%;
+    height: 40px;
+    background: transparent;
+    border-color: gray;
+    border-radius: 8px;
+    
+   }
+
+   .btn{
+    width: 22%;
+    height: 42px;
+    float: right;
+    color: white;
+    background-color: rgb(33, 120, 243);
+    border-color: white;
+    border-radius: 8px;
+}
+
+::placeholder{
+    font-size: 30px;
+    color: rgb(8, 8, 8);
+    padding: 15px 40%;
+    
+}
+
+input{
+    font-size: 20px;
+    margin-left: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+
+
+.container {
+    flex: auto;
+    color: black;
+    width: 80%;
+    margin: 50px auto;
+    background-color: #fff;
+    background: rgb(119, 149, 168);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    color: #333;
+    /*float: left;
+    display: block;*/
+}
+p {
+    color: white;
+    font-size: 20px;
+}
+.cta-btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.cta-btn:hover {
+    background-color: #0056b3;
+}
+
+.image{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background: transparent;
+}
+h1 {
+    text-align: center;
+    color: #333;
+}
+h2 {
+    color: #007bff;
+    margin-top: 30px;
+}
+.job-notification {
+    background-color:rgb(123, 163, 182);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.job-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #00070e;
+}
+.job-description {
+    color: #f4f3f3;
+}
+.job-date {
+    color: #fbf9f9;
+    font-size: 14px;
+}
